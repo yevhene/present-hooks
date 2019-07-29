@@ -1,0 +1,36 @@
+code {
+  font-size: 21px !important;
+}
+
+iframe {
+  width: 320px;
+  height: 240px;
+}
+
+dl {
+  display: block !important;
+}
+
+img {
+  background-color: white !important;
+  max-height: 80vh !important;
+  box-shadow: none !important;
+  border: 20px white solid !important;
+}
+
+img.blue {
+  background-color: blue !important;
+  border: 20px blue solid !important;
+}
+
+.reveal {
+  font-size: 36px !important;
+}
+
+a i {
+  opacity: 0.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}

@@ -1,0 +1,313 @@
+<section>
+  <h1>React with Blackjack and Hooks</h1>
+
+  <small>
+    Yevhen Shemet<br />
+    github: <a target="_blank" rel="nofollow noopener" href="https://github.com/yevhene/hooks">yevhene/present-hooks</a>
+  </small>
+</section>
+
+<section>
+  <h2>Hooks</h2>
+
+  <section>
+    <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
+  </section>
+
+  <section>
+    <p>There are no Hook equivalents to the uncommon getSnapshotBeforeUpdate and componentDidCatch lifecycles yet, but we plan to add them soon.</p>
+  </section>
+
+  <section>
+    <h3>useState</h3>
+    <pre><code class="javascript" data-trim contenteditable>
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;button onClick={setCount(count + 1)}&gt;
+      {count}
+    &lt;/button&gt;
+  );
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useEffect</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; notify(count), [count]);
+
+  return (
+    &lt;button onClick={setCount(count + 1)}&gt;
+      {count}
+    &lt;/button&gt;
+  );
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useContext</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+const SessionContext = React.createContext(null);
+
+function App() {
+  &lt;SessionContext.Provider value={currentUser}&gt;
+    &lt;Content /&gt;
+  &lt;/SessionContext.Provider&gt;
+}
+
+function Content() {
+  const auth = useContext(SessionContext);
+  // DO STUFF
+}
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <h2>Hooks Rules</h2>
+
+  <section>
+    <ul>
+      <li>Only call hooks at the top level. Don't call hooks inside loops, conditions, or nested functions.</li>
+      <li>Only call hooks from React function components. Don't call hooks from regular JavaScript functions. (There is just one other valid place to call hooks — your own custom hooks.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Rules violation</h3>
+    <h3>Demo: switch</h3>
+  </section>
+
+  <section>
+    <h3>Example</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function Form() {
+  // 1. Use the name state variable
+  const [name, setName] = useState('Loading...');
+
+  // 2. Use an effect for fetching name
+  useEffect(() =&gt; {
+    fetchName().then(name =&gt; setName(name))
+  }, []);
+
+  return &lt;Something /&gt;;
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Explanation</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+// ------------
+// First render
+// ------------
+// 1. Initialize the name state variable with 'Loading...'
+useState('Loading...')
+// 2. Fetch
+useEffect(fn, [])
+    </code></pre>
+    <pre><code class="javascript" data-trim contenteditable>
+// -------------
+// Second render
+// -------------
+// 1. Read the name state variable (argument is ignored)
+useState('Loading...')
+// 2. Ignore the effect because of []
+useEffect(fn, [])
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>ESLint</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+npm install eslint-plugin-react-hooks --save-dev
+    </code></pre>
+    <pre><code class="javascript" data-trim contenteditable>
+{
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
+  "rules": {
+    // ...
+    // Checks rules of Hooks
+    "react-hooks/rules-of-hooks": "error",
+    // Checks effect dependencies
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Custom Hooks</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function useAuth(credentials) {
+  const [user, setUser] = useState(null);
+
+  useEffect(() =&gt;
+    authorize(credentials).then(user =&gt; setUser(user))
+  );
+
+  return user;
+}
+    </code></pre>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function Profile({ credentials }) {
+  const user = useAuth(credentials);
+  // RENDER STUFF
+}
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <h2>Additional Hooks</h2>
+
+  <section>
+    <h3>useReducer</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function init(initialCount) {
+  return { count: initialCount };
+}
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    default:
+      throw new Error();
+  }
+}
+    </code></pre>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function Counter({ initialCount }) {
+  const [state, dispatch] = useReducer(reducer, initCount, init);
+
+  return (
+    &lt;button onClick={() =&gt; dispatch({ type: 'increment' })}&gt;
+      {state.count}
+    &lt;/button&gt;
+  );
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useCallback</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+const handleClick = useCallback(
+  () =&gt; doSomething(a, b),
+  [a, b],
+);
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useMemo</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+const calculateYourMomsWeight = useMemo(
+  () =&gt; compute(a, b),
+  [a, b]
+);
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useRef</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+const hateThisJqueryPluginRef = useRef();
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useImperativeHandle</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function FancyInput(props, ref) {
+  const inputRef = useRef();
+  useImperativeHandle(ref, () =&gt; ({
+    focus: () =&gt; {
+      inputRef.current.focus();
+    }
+  }));
+  return &lt;input ref={inputRef} ... /&gt;;
+}
+FancyInput = forwardRef(FancyInput);
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>useLayoutEffect</h3>
+
+    <p>Same us useEffect but runs synchronously after all DOM mutations</p>
+  </section>
+
+  <section>
+    <h3>useDebugValue</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function useFriendStatus(friendID) {
+  const [isOnline, setIsOnline] = useState(null);
+
+  // Show a label in DevTools next to this Hook
+  // e.g. "FriendStatus: Online"
+  useDebugValue(isOnline ? 'Online' : 'Offline');
+
+  return isOnline;
+}
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <h2>Libraries</h2>
+
+  <section>
+    <h3>react-spring</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+import {useSpring, animated} from 'react-spring'
+
+const [props, set, stop] = useSpring(() =&gt; ({ opacity: 1 }))
+
+// Update spring with new props
+set({ opacity: toggle ? 1 : 0 })
+// Stop animation
+stop()
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <h2>Future</h2>
+
+  <ul>
+    <li>prerender/commit</li>
+    <li>new streaming server renderer</li>
+    <li>animations</li>
+    <li>new event system to control: hover, focus</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Questions?</h2>
+</section>
