@@ -1,0 +1,75 @@
+<svg width="580" height="399.99999999999994" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="582" height="402" id="canvas_background" fill="#fff"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="none" stroke-width="3" x="318.069162" y="87.871234" width="85.48386" height="130" id="svg_10" rx="10" stroke="#aaac3e"/>
+  <g id="svg_42">
+   <rect fill="#dddd66" stroke-width="1.5" x="325.435802" y="95.688607" width="70" height="20" id="svg_7" rx="1" stroke="#aaac3e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="403.026165" y="87.648973" id="svg_8" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">state hook</text>
+  </g>
+  <g id="svg_45">
+   <rect fill="#dddd66" stroke-width="1.5" x="324.145476" y="186.656482" width="70" height="20" id="svg_43" rx="1" stroke="#aaac3e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="401.388064" y="209.679047" id="svg_44" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">state hook</text>
+  </g>
+  <g id="svg_46">
+   <rect fill="#8ab260" stroke-width="1.5" x="324.145479" y="140.841681" width="70" height="20" id="svg_34" rx="1" stroke="#4c7225"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="398.111868" y="149.085631" id="svg_35" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">effect hook</text>
+  </g>
+  <rect fill="#8ab260" stroke-width="2.5" x="52.060085" y="139.689307" width="70" height="30" id="svg_50" rx="5" stroke="#4c7225"/>
+  <text fill="#503931" stroke-width="0" stroke-opacity="null" x="55.149728" y="153.597993" id="svg_51" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useEffect</text>
+  <g id="svg_55">
+   <rect fill="#dddd66" stroke-width="2.5" x="53.350408" y="92.116623" width="70" height="30" id="svg_38" rx="5" stroke="#aaac3e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="61.702124" y="89.780979" id="svg_39" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useState</text>
+  </g>
+  <g id="svg_57">
+   <rect fill="#dddd66" stroke-width="2.5" x="51.902728" y="186.168676" width="70" height="30" id="svg_24" rx="5" stroke="#aaac3e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="58.226157" y="215.948366" id="svg_25" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useState</text>
+  </g>
+  <path id="svg_6" d="m284.29891,125.82356c-15.35616,0 -27.80487,12.44871 -27.80487,27.80489c0,15.35613 12.44871,27.80489 27.80487,27.80489c15.35617,0 27.80486,-12.44876 27.80486,-27.80489c0,-15.35618 -12.44869,-27.80489 -27.80486,-27.80489zm-4.46701,46.4101l-6.76513,-6.77102l11.83641,-11.83566l-11.83641,-11.83566l6.76513,-6.76516l18.60296,18.60082l-18.60296,18.60668z" stroke-width="1.5" stroke="#503931" fill="#f57461"/>
+  <path id="svg_9" d="m434.05502,124.84795c-15.35617,0 -27.80488,12.44871 -27.80488,27.80489c0,15.35613 12.44871,27.80489 27.80488,27.80489c15.35616,0 27.80486,-12.44876 27.80486,-27.80489c0,-15.35618 -12.4487,-27.80489 -27.80486,-27.80489zm-4.46701,46.4101l-6.76514,-6.77102l11.83641,-11.83566l-11.83641,-11.83566l6.76514,-6.76517l18.60296,18.60083l-18.60296,18.60668z" stroke-width="1.5" stroke="#503931" fill="#f57461"/>
+  <path stroke="#503931" id="svg_13" d="m144.54281,90.2138c-9.02511,0 -16.34145,7.31635 -16.34145,16.34147c0,9.02508 7.31635,16.34146 16.34145,16.34146c9.02512,0 16.34145,-7.31638 16.34145,-16.34146c0,-9.02512 -7.31633,-16.34147 -16.34145,-16.34147zm-2.62534,27.27611l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.9355l0,0.00001z" stroke-width="1.5" fill="#f57461"/>
+  <path stroke="#503931" id="svg_14" d="m142.59159,138.50649c-9.0251,0 -16.34145,7.31634 -16.34145,16.34146c0,9.02509 7.31635,16.34147 16.34145,16.34147c9.02512,0 16.34145,-7.31638 16.34145,-16.34147c0,-9.02512 -7.31633,-16.34146 -16.34145,-16.34146zm-2.62534,27.2761l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.93551z" stroke-width="1.5" fill="#f57461"/>
+  <path stroke="#503931" id="svg_17" d="m142.59159,185.41938c-9.0251,0 -16.34145,7.31634 -16.34145,16.34146c0,9.02509 7.31635,16.34147 16.34145,16.34147c9.02512,0 16.34145,-7.31638 16.34145,-16.34147c0,-9.02512 -7.31633,-16.34146 -16.34145,-16.34146zm-2.62534,27.2761l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.93551z" stroke-width="1.5" fill="#f57461"/>
+  <rect fill="none" stroke-width="3" x="167.67377" y="86.574104" width="85" height="130" id="svg_1" rx="10" stroke="#604a6e"/>
+  <text fill="#aaac3e" stroke="#aaac3e" stroke-width="0" x="322.647478" y="235.599932" id="svg_37" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">memoized</text>
+  <text fill="#aaac3e" stroke="#aaac3e" stroke-width="0" x="342.647731" y="250.591408" id="svg_40" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">state</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_3" y="235.120744" x="480.97464" stroke-width="0" stroke="#4c7225" fill="#4c7225">passive</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_19" y="250.242617" x="484.877059" stroke-width="0" stroke="#4c7225" fill="#4c7225">effects</text>
+  <text fill="#604a6e" stroke="#aaac3e" stroke-width="0" x="169.142848" y="234.857143" id="svg_49" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">dispatcher</text>
+  <g id="svg_52">
+   <rect fill="none" stroke-width="3" x="466.242022" y="86.980677" width="85" height="130" id="svg_26" rx="10" stroke="#4c7225"/>
+   <rect fill="#8ab260" stroke-width="1.5" x="473.749377" y="186.582745" width="70" height="20" id="svg_28" rx="1" stroke="#4c7225"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="607.788598" y="210.234505" id="svg_27" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">effect</text>
+  </g>
+  <rect fill="#f57261" x="309.714277" y="264.571439" width="253.142857" height="1.714283" id="svg_59" stroke="#f57261"/>
+  <text fill="#f57461" stroke="#f57461" stroke-width="0" x="418.857135" y="286.857143" id="svg_60" font-size="20" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">fiber</text>
+  <g id="svg_61">
+   <rect fill="#9693b2" stroke-width="1.5" x="175.424912" y="185.509073" width="70" height="20" id="svg_15" rx="1" stroke="#604a6e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="227.37545" y="208.139844" id="svg_16" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onIdle</text>
+  </g>
+  <g id="svg_62">
+   <rect fill="#9693b2" stroke-width="1.5" x="175.269949" y="141.155953" width="70" height="20" id="svg_11" rx="1" stroke="#604a6e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="213.451608" y="149.507218" id="svg_12" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onUpdate</text>
+  </g>
+  <g id="svg_63">
+   <rect fill="#9693b2" stroke-width="1.5" x="174.845983" y="96.335641" width="70" height="20" id="svg_4" rx="1" stroke="#604a6e"/>
+   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="216.189572" y="87.443604" id="svg_5" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onMount</text>
+  </g>
+  <g id="svg_53">
+   <path stroke="#aaac3e" transform="rotate(180 359.415283203125,174.3115692138672) " id="svg_47" d="m353.317739,174.291327l6.09756,-8.41368l6.09756,8.41368l-3.04878,0l0,8.45417l-6.09756,0l0,-8.45417l-3.04878,0z" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
+   <text stroke="#aaac3e" transform="rotate(-90 358.95458984375,172.9230804443359) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="6" id="svg_48" y="174.993842" x="353.287856" stroke-width="0" fill="#aaac3e">next</text>
+  </g>
+  <g id="svg_58">
+   <path stroke="#aaac3e" transform="rotate(180 359.1328125,127.7013931274414) " id="svg_54" d="m353.035249,127.68116l6.09756,-8.41368l6.09756,8.41368l-3.04878,0l0,8.45417l-6.09756,0l0,-8.45417l-3.04878,0z" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
+   <text stroke="#aaac3e" transform="rotate(-90 358.67211914062506,126.31290435791016) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="6" id="svg_56" y="128.383675" x="353.005366" stroke-width="0" fill="#aaac3e">next</text>
+  </g>
+ </g>
+</svg>

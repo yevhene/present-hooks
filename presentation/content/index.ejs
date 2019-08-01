@@ -13,22 +13,34 @@
   <section>
     <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
   </section>
+</section>
 
-  <section>
-    <p>There are no Hook equivalents to the uncommon getSnapshotBeforeUpdate and componentDidCatch lifecycles yet, but we plan to add them soon.</p>
-  </section>
+<section>
+  <h2>Links</h2>
+
+  <ul>
+    <li><b>Introduction:</b> <a href="https://reactjs.org/docs/hooks-intro.html">Hooks Official Docs</a></li>
+    <li><b>Examples:</b> <a href="https://usehooks.com">usehooks.com</a></li>
+    <li><b>Internal Details:</b> <a href="https://medium.com/the-guild/under-the-hood-of-reacts-hooks-system-eb59638c9dba">Under the hood of React’s hooks system</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Basic Hooks</h2>
 
   <section>
     <h3>useState</h3>
     <pre><code class="javascript" data-trim contenteditable>
+import React, { useState } from 'react'
+
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     &lt;button onClick={setCount(count + 1)}&gt;
       {count}
     &lt;/button&gt;
-  );
+  )
 }
     </code></pre>
   </section>
@@ -36,11 +48,13 @@ function Counter() {
   <section>
     <h3>useEffect</h3>
 
+    <p>Instead of <code>componentDidMount</code>, <code>componentDidUpdate</code> and <code>componentWillUnmount</code></p>
+
     <pre><code class="javascript" data-trim contenteditable>
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
-  useEffect(() =&gt; notify(count), [count]);
+  useEffect(() =&gt; notify(count), [count])
 
   return (
     &lt;button onClick={setCount(count + 1)}&gt;
@@ -49,13 +63,23 @@ function Counter() {
   );
 }
     </code></pre>
+    <pre><code class="javascript" data-trim contenteditable>
+function Subscription() {
+  useEffect(() =&gt; {
+    subscribe()
+    return () =&gt; unsubscribe()
+  })
+}
+    </code></pre>
   </section>
 
   <section>
     <h3>useContext</h3>
 
+    <p>Instead of <code>Context.Consumer</code></p>
+
     <pre><code class="javascript" data-trim contenteditable>
-const SessionContext = React.createContext(null);
+const SessionContext = React.createContext(null)
 
 function App() {
   &lt;SessionContext.Provider value={currentUser}&gt;
@@ -64,7 +88,7 @@ function App() {
 }
 
 function Content() {
-  const auth = useContext(SessionContext);
+  const auth = useContext(SessionContext)
   // DO STUFF
 }
     </code></pre>
@@ -72,34 +96,22 @@ function Content() {
 </section>
 
 <section>
-  <h2>Hooks Rules</h2>
-
-  <section>
-    <ul>
-      <li>Only call hooks at the top level. Don't call hooks inside loops, conditions, or nested functions.</li>
-      <li>Only call hooks from React function components. Don't call hooks from regular JavaScript functions. (There is just one other valid place to call hooks — your own custom hooks.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Rules violation</h3>
-    <h3>Demo: switch</h3>
-  </section>
+  <h2>How It Works</h2>
 
   <section>
     <h3>Example</h3>
 
     <pre><code class="javascript" data-trim contenteditable>
-function Form() {
-  // 1. Use the name state variable
-  const [name, setName] = useState('Loading...');
+function Username() {
+  // 1. Use the username state variable
+  const [username, setUsername] = useState('Loading...')
 
-  // 2. Use an effect for fetching name
+  // 2. Use an effect for fetching username
   useEffect(() =&gt; {
-    fetchName().then(name =&gt; setName(name))
-  }, []);
+    fetchUser().then(user =&gt; setUsername(user.name))
+  }, [])
 
-  return &lt;Something /&gt;;
+  return &lt;div&gt;{username}&lt;/div&gt;
 }
     </code></pre>
   </section>
@@ -114,16 +126,55 @@ function Form() {
 // 1. Initialize the name state variable with 'Loading...'
 useState('Loading...')
 // 2. Fetch
-useEffect(fn, [])
+useEffect(() =&gt; {...})
     </code></pre>
+
     <pre><code class="javascript" data-trim contenteditable>
 // -------------
 // Second render
 // -------------
 // 1. Read the name state variable (argument is ignored)
 useState('Loading...')
-// 2. Ignore the effect because of []
-useEffect(fn, [])
+// 2. Fetch (effect is replaced)
+useEffect(() =&gt; {...})
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Inside</h3>
+
+    <img src="images/hooks-inside.svg" />
+  </section>
+
+  <section>
+    <h3>Hooks Rules</h3>
+
+    <ul>
+      <li>Only call hooks at the top level. Don't call hooks inside loops, conditions, or nested functions.</li>
+      <li>Only call hooks from React function components. Don't call hooks from regular JavaScript functions. (There is just one other valid place to call hooks — your own custom hooks.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Custom Hooks</h3>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function useAuth() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() =&gt;
+    authorize(config.credentials).then(user =&gt; setUser(user))
+  , [])
+
+  return user
+}
+    </code></pre>
+
+    <pre><code class="javascript" data-trim contenteditable>
+function Profile() {
+  const user = useAuth()
+  // RENDER STUFF
+}
     </code></pre>
   </section>
 
@@ -149,29 +200,6 @@ npm install eslint-plugin-react-hooks --save-dev
 }
     </code></pre>
   </section>
-
-  <section>
-    <h3>Custom Hooks</h3>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function useAuth(credentials) {
-  const [user, setUser] = useState(null);
-
-  useEffect(() =&gt;
-    authorize(credentials).then(user =&gt; setUser(user))
-  );
-
-  return user;
-}
-    </code></pre>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function Profile({ credentials }) {
-  const user = useAuth(credentials);
-  // RENDER STUFF
-}
-    </code></pre>
-  </section>
 </section>
 
 <section>
@@ -180,30 +208,28 @@ function Profile({ credentials }) {
   <section>
     <h3>useReducer</h3>
 
-    <pre><code class="javascript" data-trim contenteditable>
-function init(initialCount) {
-  return { count: initialCount };
-}
+    <p>Useful to incapsulate complex logic</p>
 
+    <pre><code class="javascript" data-trim contenteditable>
 function reducer(state, action) {
   switch (action.type) {
     case 'increment':
-      return { count: state.count + 1 };
+      return { count: state.count + 1 }
     default:
-      throw new Error();
+      throw new Error()
   }
 }
     </code></pre>
 
     <pre><code class="javascript" data-trim contenteditable>
 function Counter({ initialCount }) {
-  const [state, dispatch] = useReducer(reducer, initCount, init);
+  const [state, dispatch] = useReducer(reducer, { count: 0 })
 
   return (
     &lt;button onClick={() =&gt; dispatch({ type: 'increment' })}&gt;
       {state.count}
     &lt;/button&gt;
-  );
+  )
 }
     </code></pre>
   </section>
@@ -211,54 +237,64 @@ function Counter({ initialCount }) {
   <section>
     <h3>useCallback</h3>
 
+    <p>To avoid unnecessary re-render</p>
+
     <pre><code class="javascript" data-trim contenteditable>
 const handleClick = useCallback(
   () =&gt; doSomething(a, b),
-  [a, b],
-);
+  [a, b]
+)
     </code></pre>
   </section>
 
   <section>
     <h3>useMemo</h3>
 
+    <p>To avoid same complex computations</p>
+
     <pre><code class="javascript" data-trim contenteditable>
 const calculateYourMomsWeight = useMemo(
   () =&gt; compute(a, b),
   [a, b]
-);
+)
     </code></pre>
   </section>
 
   <section>
     <h3>useRef</h3>
 
+    <p>A replacement for <code>React.createRef</code> and for instance variables</p>
+
     <pre><code class="javascript" data-trim contenteditable>
-const hateThisJqueryPluginRef = useRef();
+const hateThisJqueryPluginRef = useRef(null)
+
+hateThisJqueryPluginRef.current
     </code></pre>
   </section>
 
   <section>
     <h3>useImperativeHandle</h3>
 
+    <p>To create custom ref methods. Should be used with <code>React.forwardRef</code></p>
+
     <pre><code class="javascript" data-trim contenteditable>
 function FancyInput(props, ref) {
-  const inputRef = useRef();
+  const inputRef = useRef()
   useImperativeHandle(ref, () =&gt; ({
     focus: () =&gt; {
-      inputRef.current.focus();
+      inputRef.current.focus()
     }
   }));
-  return &lt;input ref={inputRef} ... /&gt;;
+  return &lt;input ref={inputRef} ... /&gt;
 }
-FancyInput = forwardRef(FancyInput);
+FancyInput = forwardRef(FancyInput)
     </code></pre>
   </section>
 
   <section>
     <h3>useLayoutEffect</h3>
 
-    <p>Same us useEffect but runs synchronously after all DOM mutations</p>
+    <p>Same us useEffect but runs synchronously after all DOM mutations. (Before paint).</p>
   </section>
 
   <section>
@@ -266,15 +302,21 @@ FancyInput = forwardRef(FancyInput);
 
     <pre><code class="javascript" data-trim contenteditable>
 function useFriendStatus(friendID) {
-  const [isOnline, setIsOnline] = useState(null);
+  const [isOnline, setIsOnline] = useState(false)
 
   // Show a label in DevTools next to this Hook
   // e.g. "FriendStatus: Online"
-  useDebugValue(isOnline ? 'Online' : 'Offline');
+  useDebugValue(isOnline ? 'Online' : 'Offline')
 
-  return isOnline;
+  return isOnline
 }
     </code></pre>
+  </section>
+
+  <section>
+    <h3>useListener</h3>
+
+    <p>For a brand new <b>Flare</b> event system</p>
   </section>
 </section>
 
@@ -298,14 +340,23 @@ stop()
 </section>
 
 <section>
-  <h2>Future</h2>
+  <h2>Do Hooks cover all use cases for classes?</h2>
 
-  <ul>
-    <li>prerender/commit</li>
-    <li>new streaming server renderer</li>
-    <li>animations</li>
-    <li>new event system to control: hover, focus</li>
-  </ul>
+  <section>
+    <h3>shouldComponentUpdate</h3>
+
+    <p><code>React.memo</code></p>
+
+    <pre><code class="javascript" data-trim contenteditable>
+const MyComponent = React.memo(function MyComponent(props) {
+  /* only rerenders if props change */
+})
+    </code></pre>
+  </section>
+
+  <section>
+    <p>There are no Hook equivalents to the uncommon <code>getSnapshotBeforeUpdate</code> and <code>componentDidCatch</code> lifecycles yet, but we plan to add them soon.</p>
+  </section>
 </section>
 
 <section>
