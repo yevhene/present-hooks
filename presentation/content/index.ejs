@@ -3,7 +3,7 @@
 
   <small>
     Yevhen Shemet<br />
-    github: <a target="_blank" rel="nofollow noopener" href="https://github.com/yevhene/hooks">yevhene/present-hooks</a>
+    github: <a target="_blank" rel="nofollow noopener" href="https://github.com/yevhene/present-hooks">yevhene/present-hooks</a>
   </small>
 </section>
 
@@ -13,6 +13,30 @@
   <section>
     <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
   </section>
+
+  <section>
+    <h3>Hooks will help to avoid: </h3>
+
+    <ul>
+      <li><b>Huge components</b> that are hard to refactor and test.</li>
+      <li><b>Duplicated logic</b> between different components and lifecycle methods.</li>
+      <li><b>Complex patterns</b> like render props and higher-order components.</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h3>Before</h3>
+
+    <img src="images/refactoring-before.jpeg" />
+  </section>
+
+  <section>
+    <h3>After</h3>
+
+    <img src="images/refactoring-after.jpeg" />
+  </section>
 </section>
 
 <section>
@@ -20,16 +44,18 @@
 
   <ul>
     <li><b>Introduction:</b> <a href="https://reactjs.org/docs/hooks-intro.html">Hooks Official Docs</a></li>
-    <li><b>Examples:</b> <a href="https://usehooks.com">usehooks.com</a></li>
-    <li><b>Internal Details:</b> <a href="https://medium.com/the-guild/under-the-hood-of-reacts-hooks-system-eb59638c9dba">Under the hood of React’s hooks system</a></li>
+    <li><b>Further Information:</b> <a href="https://github.com/rehooks/awesome-react-hooks">awesome-react-hooks</a></li>
   </ul>
 </section>
 
 <section>
-  <h2>Basic Hooks</h2>
+  <img src="images/the-end.png" />
+</section>
+
+<section>
+  <h2>useState</h2>
 
   <section>
-    <h3>useState</h3>
     <pre><code class="javascript" data-trim contenteditable>
 import React, { useState } from 'react'
 
@@ -44,11 +70,13 @@ function Counter() {
 }
     </code></pre>
   </section>
+</section>
+
+<section>
+  <h2>useEffect</h2>
 
   <section>
-    <h3>useEffect</h3>
-
-    <p>Instead of <code>componentDidMount</code>, <code>componentDidUpdate</code> and <code>componentWillUnmount</code></p>
+    <h3>componentDidMount/componentDidUpdate</h3>
 
     <pre><code class="javascript" data-trim contenteditable>
 function Counter() {
@@ -63,33 +91,22 @@ function Counter() {
   );
 }
     </code></pre>
-    <pre><code class="javascript" data-trim contenteditable>
-function Subscription() {
-  useEffect(() =&gt; {
-    subscribe()
-    return () =&gt; unsubscribe()
-  })
-}
-    </code></pre>
   </section>
 
   <section>
-    <h3>useContext</h3>
-
-    <p>Instead of <code>Context.Consumer</code></p>
+    <h3>componentWillUnmount</h3>
 
     <pre><code class="javascript" data-trim contenteditable>
-const SessionContext = React.createContext(null)
+function UserFeed({ userId }) {
+  const [feed, setFeed] = useState([])
 
-function App() {
-  &lt;SessionContext.Provider value={currentUser}&gt;
-    &lt;Content /&gt;
-  &lt;/SessionContext.Provider&gt;
-}
+  useEffect(() =&gt; {
+    subscribe(userId, (userFeed) =&gt; setFeed(userFeed))
 
-function Content() {
-  const auth = useContext(SessionContext)
-  // DO STUFF
+    return () =&gt; unsubscribe()
+  }, [userId])
+
+  return &lt;Feed feed={feed}&gt;
 }
     </code></pre>
   </section>
@@ -99,34 +116,16 @@ function Content() {
   <h2>How It Works</h2>
 
   <section>
-    <h3>Example</h3>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function Username() {
-  // 1. Use the username state variable
-  const [username, setUsername] = useState('Loading...')
-
-  // 2. Use an effect for fetching username
-  useEffect(() =&gt; {
-    fetchUser().then(user =&gt; setUsername(user.name))
-  }, [])
-
-  return &lt;div&gt;{username}&lt;/div&gt;
-}
-    </code></pre>
-  </section>
-
-  <section>
     <h3>Explanation</h3>
 
     <pre><code class="javascript" data-trim contenteditable>
 // ------------
 // First render
 // ------------
-// 1. Initialize the name state variable with 'Loading...'
-useState('Loading...')
-// 2. Fetch
-useEffect(() =&gt; {...})
+// 1. Initialize the name state variable with []
+useState([])
+// 2. Subscribe
+useEffect(() =&gt; {...}, [...])
     </code></pre>
 
     <pre><code class="javascript" data-trim contenteditable>
@@ -134,9 +133,10 @@ useEffect(() =&gt; {...})
 // Second render
 // -------------
 // 1. Read the name state variable (argument is ignored)
-useState('Loading...')
-// 2. Fetch (effect is replaced)
-useEffect(() =&gt; {...})
+useState([])
+// 2. Unsubscribe and Subscribe
+// (effect is replaced according to square brackets)
+useEffect(() =&gt; {...}, [...])
     </code></pre>
   </section>
 
@@ -153,29 +153,6 @@ useEffect(() =&gt; {...})
       <li>Only call hooks at the top level. Don't call hooks inside loops, conditions, or nested functions.</li>
       <li>Only call hooks from React function components. Don't call hooks from regular JavaScript functions. (There is just one other valid place to call hooks — your own custom hooks.</li>
     </ul>
-  </section>
-
-  <section>
-    <h3>Custom Hooks</h3>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function useAuth() {
-  const [user, setUser] = useState(null)
-
-  useEffect(() =&gt;
-    authorize(config.credentials).then(user =&gt; setUser(user))
-  , [])
-
-  return user
-}
-    </code></pre>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function Profile() {
-  const user = useAuth()
-  // RENDER STUFF
-}
-    </code></pre>
   </section>
 
   <section>
@@ -203,128 +180,67 @@ npm install eslint-plugin-react-hooks --save-dev
 </section>
 
 <section>
-  <h2>Additional Hooks</h2>
+  <h2>More Hooks</h2>
 
   <section>
-    <h3>useReducer</h3>
+    <h3>Built in</h3>
 
-    <p>Useful to incapsulate complex logic</p>
+    <ul>
+      <li>useContext</li>
+      <li>useReducer</li>
+      <li>useCallback</li>
+      <li>useMemo</li>
+      <li>useRef</li>
+      <li>useImperativeHandle</li>
+      <li>useLayoutEffect</li>
+      <li>useDebugValue</li>
+      <li>useListener</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Custom Hooks</h3>
 
     <pre><code class="javascript" data-trim contenteditable>
-function reducer(state, action) {
-  switch (action.type) {
-    case 'increment':
-      return { count: state.count + 1 }
-    default:
-      throw new Error()
-  }
+function useSuscription(userId) {
+  const [feed, setFeed] = useState([])
+
+  useEffect(() =&gt; {
+    subscribe(userId, (userFeed) =&gt; setFeed(userFeed))
+
+    return () =&gt; unsubscribe()
+  }, [userId])
+
+  return feed
 }
     </code></pre>
 
     <pre><code class="javascript" data-trim contenteditable>
-function Counter({ initialCount }) {
-  const [state, dispatch] = useReducer(reducer, { count: 0 })
+function UserFeed({ userId }) {
+  const feed = useSubscription(userId)
 
-  return (
-    &lt;button onClick={() =&gt; dispatch({ type: 'increment' })}&gt;
-      {state.count}
-    &lt;/button&gt;
-  )
-}
-    </code></pre>
-  </section>
-
-  <section>
-    <h3>useCallback</h3>
-
-    <p>To avoid unnecessary re-render</p>
-
-    <pre><code class="javascript" data-trim contenteditable>
-const handleClick = useCallback(
-  () =&gt; doSomething(a, b),
-  [a, b]
-)
-    </code></pre>
-  </section>
-
-  <section>
-    <h3>useMemo</h3>
-
-    <p>To avoid same complex computations</p>
-
-    <pre><code class="javascript" data-trim contenteditable>
-const calculateYourMomsWeight = useMemo(
-  () =&gt; compute(a, b),
-  [a, b]
-)
-    </code></pre>
-  </section>
-
-  <section>
-    <h3>useRef</h3>
-
-    <p>A replacement for <code>React.createRef</code> and for instance variables</p>
-
-    <pre><code class="javascript" data-trim contenteditable>
-const hateThisJqueryPluginRef = useRef(null)
-
-hateThisJqueryPluginRef.current
-    </code></pre>
-  </section>
-
-  <section>
-    <h3>useImperativeHandle</h3>
-
-    <p>To create custom ref methods. Should be used with <code>React.forwardRef</code></p>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function FancyInput(props, ref) {
-  const inputRef = useRef()
-  useImperativeHandle(ref, () =&gt; ({
-    focus: () =&gt; {
-      inputRef.current.focus()
-    }
-  }));
-  return &lt;input ref={inputRef} ... /&gt;
-}
-FancyInput = forwardRef(FancyInput)
-    </code></pre>
-  </section>
-
-  <section>
-    <h3>useLayoutEffect</h3>
-
-    <p>Same us useEffect but runs synchronously after all DOM mutations. (Before paint).</p>
-  </section>
-
-  <section>
-    <h3>useDebugValue</h3>
-
-    <pre><code class="javascript" data-trim contenteditable>
-function useFriendStatus(friendID) {
-  const [isOnline, setIsOnline] = useState(false)
-
-  // Show a label in DevTools next to this Hook
-  // e.g. "FriendStatus: Online"
-  useDebugValue(isOnline ? 'Online' : 'Offline')
-
-  return isOnline
+  return &lt;Feed feed={feed}&gt;
 }
     </code></pre>
   </section>
 
   <section>
-    <h3>useListener</h3>
+    <h3><a href="https://usehooks.com">useHooks</a></h3>
 
-    <p>For a brand new <b>Flare</b> event system</p>
+    <ul>
+      <li>useEventListener</li>
+      <li>useWhyDidYouUpdate</li>
+      <li>useLockBodyScroll</li>
+      <li>useHistory</li>
+      <li>useKeyPress</li>
+      <li>...</li>
+    </ul>
   </section>
-</section>
-
-<section>
-  <h2>Libraries</h2>
 
   <section>
-    <h3>react-spring</h3>
+    <h3>Libraries</h3>
+
+    <h4>react-spring</h4>
 
     <pre><code class="javascript" data-trim contenteditable>
 import {useSpring, animated} from 'react-spring'
@@ -335,6 +251,22 @@ const [props, set, stop] = useSpring(() =&gt; ({ opacity: 1 }))
 set({ opacity: toggle ? 1 : 0 })
 // Stop animation
 stop()
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Redux</h3>
+
+    <a href="https://react-redux.js.org/next/api/hooks">useSelector</a>
+
+    <pre><code class="javascript" data-trim contenteditable>
+import React from 'react'
+import { useSelector } from 'react-redux'
+
+export const CounterComponent = () =&gt; {
+  const counter = useSelector(state =&gt; state.counter)
+  return &lt;div&gt;{counter}&lt;/div&gt;
+}
     </code></pre>
   </section>
 </section>
@@ -357,6 +289,15 @@ const MyComponent = React.memo(function MyComponent(props) {
   <section>
     <p>There are no Hook equivalents to the uncommon <code>getSnapshotBeforeUpdate</code> and <code>componentDidCatch</code> lifecycles yet, but we plan to add them soon.</p>
   </section>
+</section>
+
+<section>
+  <h2>References</h2>
+
+  <ul>
+    <li><a href="https://twitter.com/threepointone/status/1056594421079261185">Sunil Pai: Before/After refactoring images</a></li>
+    <li><a href="https://medium.com/the-guild/under-the-hood-of-reacts-hooks-system-eb59638c9dba">Eytan Manor: Under the hood of React’s hooks system</a></li>
+  </ul>
 </section>
 
 <section>

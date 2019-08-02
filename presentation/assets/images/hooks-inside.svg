@@ -1,75 +1,650 @@
-<svg width="580" height="399.99999999999994" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
- <g>
-  <title>background</title>
-  <rect x="-1" y="-1" width="582" height="402" id="canvas_background" fill="#fff"/>
-  <g id="canvasGrid" display="none">
-   <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="580"
+   height="235"
+   version="1.1"
+   id="svg3867"
+   sodipodi:docname="vjs2019 (1).svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata3873">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3871" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1287"
+     inkscape:window-height="702"
+     id="namedview3869"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:zoom="0.78324184"
+     inkscape:cx="386.49633"
+     inkscape:cy="314.19458"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3867"
+     inkscape:pagecheckerboard="true">
+    <sodipodi:guide
+       position="-36.668822,222.78039"
+       orientation="0,1"
+       id="guide3929"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-69.186457,325.86821"
+       orientation="0,1"
+       id="guide3931"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.69186457,152.90207"
+       orientation="1,0"
+       id="guide4985"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="56.04103,398.51399"
+       orientation="1,0"
+       id="guide4987"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="20.064072,262.90853"
+       orientation="1,0"
+       id="guide4989"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="170.19868,259.44921"
+       orientation="1,0"
+       id="guide4991"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="40.625773,356.60401"
+       orientation="0,1"
+       id="guide5000"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-101.70409,252.53057"
+       orientation="0,1"
+       id="guide5002"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-15.912885,274.67023"
+       orientation="0,1"
+       id="guide5004"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="126.39129,400.84096"
+       orientation="1,0"
+       id="guide5008"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="188.68415,414.83428"
+       orientation="1,0"
+       id="guide5022"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="198.53383,360.68043"
+       orientation="1,0"
+       id="guide5026"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="268.5952,359.88246"
+       orientation="1,0"
+       id="guide5028"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="222.99035,299.27653"
+       orientation="0,1"
+       id="guide5032"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="278.51224,404.00074"
+       orientation="1,0"
+       id="guide5034"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="298.82513,414.38289"
+       orientation="1,0"
+       id="guide5036"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="323.81442,305.7804"
+       orientation="1,0"
+       id="guide5038"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="342.96559,295.72603"
+       orientation="1,0"
+       id="guide5040"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="353.49874,363.07432"
+       orientation="1,0"
+       id="guide5054"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="423.49875,345.86821"
+       orientation="1,0"
+       id="guide5056"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="433.1357,356.60401"
+       orientation="1,0"
+       id="guide5058"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="453.56362,356.60401"
+       orientation="1,0"
+       id="guide5060"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="478.77933,360.36124"
+       orientation="1,0"
+       id="guide5062"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="503.35667,343.76356"
+       orientation="1,0"
+       id="guide5064"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="513.57062,315.67517"
+       orientation="1,0"
+       id="guide5066"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="203.32162,213.53558"
+       orientation="0,1"
+       id="guide5072"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="585.17047,198.85301"
+       orientation="0,1"
+       id="guide5074"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="585.17047,252.53056"
+       orientation="1,0"
+       id="guide5076"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="594.00555,222.78039"
+       orientation="1,0"
+       id="guide5078"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="45.005257,394.51417"
+       orientation="0,1"
+       id="guide5126"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="544.85087,152.57101"
+       orientation="0,1"
+       id="guide5128"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="539.74389,112.99192"
+       orientation="0,1"
+       id="guide5130"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="377.59399,311.01286"
+       orientation="1,0"
+       id="guide5289"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="364.27777,305.82179"
+       orientation="0,1"
+       id="guide5291"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="301.30782,257.74796"
+       orientation="0,1"
+       id="guide5295"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <rect
+     style="opacity:1;fill:#cd0000;fill-opacity:0;stroke:none;stroke-width:0.9952625;stroke-opacity:1"
+     id="rect4761"
+     width="630.73657"
+     height="281.63535"
+     x="12.182569"
+     y="5.7037339" />
+  <g
+     id="g5343"
+     transform="translate(-36.368744,-30.52941)">
+    <rect
+       x="344.7211"
+       y="45.267883"
+       width="86.951721"
+       height="131.95172"
+       id="svg_10"
+       rx="5.0858564"
+       style="fill:none;stroke:#efef8f;stroke-width:3.04827499;stroke-opacity:1" />
+    <rect
+       style="fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:1.5"
+       rx="1"
+       id="svg_7"
+       height="20"
+       width="70"
+       y="54.13179"
+       x="353.49875" />
+    <text
+       style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:0"
+       font-weight="bold"
+       transform="scale(1.0279423,0.97281725)"
+       xml:space="preserve"
+       font-size="16"
+       id="svg_8"
+       y="69.755142"
+       x="347.89838"
+       stroke-opacity="null">state hook</text>
+    <rect
+       style="fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:1.5"
+       rx="1"
+       id="svg_43"
+       height="20"
+       width="70"
+       y="147.46944"
+       x="353.49875" />
+    <text
+       style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#007e87;stroke-width:0"
+       font-weight="bold"
+       transform="scale(1.0279423,0.97281725)"
+       xml:space="preserve"
+       font-size="16"
+       id="svg_44"
+       y="165.29059"
+       x="346.65317"
+       stroke-opacity="null">state hook</text>
+    <rect
+       style="fill:#7f9f7f;fill-opacity:0.94117647;stroke:none;stroke-width:1.5"
+       rx="1"
+       id="svg_34"
+       height="20"
+       width="70"
+       y="100.72347"
+       x="353.49875" />
+    <text
+       style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#007e87;stroke-width:0"
+       font-weight="bold"
+       transform="scale(1.0279423,0.97281725)"
+       xml:space="preserve"
+       font-size="16"
+       id="svg_35"
+       y="117.65335"
+       x="345.37469"
+       stroke-opacity="null">effect hook</text>
+    <g
+       id="g5016">
+      <rect
+         style="fill:#7f9f7f;fill-opacity:0.94117647;stroke:none;stroke-width:2.5"
+         rx="3"
+         id="svg_50"
+         height="30"
+         width="70"
+         y="95.329773"
+         x="56.041031" />
+      <text
+         style="font-weight:bold;font-size:13.79311657px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:0"
+         font-weight="bold"
+         transform="scale(1.0279423,0.97281725)"
+         xml:space="preserve"
+         font-size="18"
+         id="svg_51"
+         y="118.21134"
+         x="57.662365"
+         stroke-opacity="null">useEffect</text>
+    </g>
+    <g
+       id="g5012">
+      <rect
+         x="56.432816"
+         y="43.9254"
+         width="70"
+         height="30"
+         id="svg_38"
+         rx="3"
+         style="fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:2.5" />
+      <text
+         stroke-opacity="null"
+         x="61.042118"
+         y="65.366951"
+         id="svg_39"
+         font-size="18"
+         xml:space="preserve"
+         transform="scale(1.0279423,0.97281725)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:13.79311657px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:0">useState</text>
+    </g>
+    <g
+       id="g5020">
+      <rect
+         x="56.041031"
+         y="147.46944"
+         width="70"
+         height="30"
+         id="svg_24"
+         rx="3"
+         style="fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:2.5" />
+      <text
+         stroke-opacity="null"
+         x="60.723454"
+         y="171.42271"
+         id="svg_25"
+         font-size="18"
+         xml:space="preserve"
+         transform="scale(1.0279423,0.97281725)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:13.79311657px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:none;stroke-width:0">useState</text>
+    </g>
+    <rect
+       x="190.03835"
+       y="45.276295"
+       width="86.943306"
+       height="131.94331"
+       id="svg_1"
+       rx="5.1143122"
+       style="fill:none;stroke:#e3ceab;stroke-width:3.05669355;stroke-opacity:1" />
+    <text
+       x="351.76724"
+       y="195.47386"
+       id="svg_37"
+       font-size="16"
+       xml:space="preserve"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif';text-anchor:start;fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1">memoized</text>
+    <text
+       x="371.76749"
+       y="210.14615"
+       id="svg_40"
+       font-size="16"
+       xml:space="preserve"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif';text-anchor:start;fill:#efef8f;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1">state</text>
+    <text
+       font-weight="bold"
+       xml:space="preserve"
+       font-size="16"
+       id="svg_3"
+       y="195.31386"
+       x="522.22345"
+       style="font-weight:bold;font-size:16px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;opacity:1;fill:#7f9f7e;fill-opacity:1;stroke:#7f9f7e;stroke-width:0;stroke-opacity:1"><tspan
+         id="tspan4765"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif'">passive</tspan></text>
+    <text
+       font-weight="bold"
+       xml:space="preserve"
+       font-size="16"
+       id="svg_19"
+       y="210.43571"
+       x="525.48749"
+       style="font-weight:bold;font-size:16px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#7f9f7f;fill-opacity:1;stroke:#4c7225;stroke-width:0"><tspan
+         id="tspan4769"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif'">effects</tspan></text>
+    <text
+       x="196.70578"
+       y="195.36945"
+       id="svg_49"
+       font-size="16"
+       xml:space="preserve"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif';text-anchor:start;fill:#e3ceab;fill-opacity:1;stroke:none;stroke-width:0">dispatcher</text>
+    <rect
+       style="fill:none;stroke:#7f9f7f;stroke-width:3.05708432;stroke-opacity:1"
+       rx="5.1142735"
+       id="svg_26"
+       height="131.97807"
+       width="86.94265"
+       y="45.241543"
+       x="504.95261" />
+    <g
+       id="g5070">
+      <rect
+         x="513.57062"
+         y="147.46944"
+         width="71.599831"
+         height="20.304317"
+         id="svg_28"
+         rx="1.0228547"
+         style="fill:#7f9f7f;fill-opacity:1;stroke:none;stroke-width:1.52854216" />
+      <text
+         stroke-opacity="null"
+         x="514.46942"
+         y="167.12433"
+         id="svg_27"
+         font-size="16"
+         xml:space="preserve"
+         transform="scale(1.0318023,0.96917791)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:12.49384403px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#007e87;stroke-width:0">effect</text>
+    </g>
+    <rect
+       x="342.96558"
+       y="223.48781"
+       width="251.03995"
+       height="3.8842649"
+       id="svg_59"
+       style="fill:#cc9393;fill-opacity:1;stroke:none;stroke-width:1.49900043" />
+    <text
+       x="449.25363"
+       y="247.05026"
+       id="svg_60"
+       font-size="20"
+       xml:space="preserve"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.33333397px;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif Bold';text-anchor:start;fill:#cc9393;fill-opacity:1;stroke:#f57461;stroke-width:0">fiber</text>
+    <g
+       id="g5052">
+      <rect
+         x="198.5952"
+         y="147.46944"
+         width="70"
+         height="20"
+         id="svg_15"
+         rx="1"
+         style="fill:#e3ceab;fill-opacity:1;stroke:none;stroke-width:1.5" />
+      <text
+         stroke-opacity="null"
+         x="204.36859"
+         y="166.76221"
+         id="svg_16"
+         font-size="16"
+         xml:space="preserve"
+         transform="scale(1.0279423,0.97281725)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#503931;stroke-width:0">OnError</text>
+    </g>
+    <g
+       id="g5048">
+      <rect
+         x="198.5952"
+         y="100.72347"
+         width="70"
+         height="20"
+         id="svg_11"
+         rx="1"
+         style="fill:#e3ceab;fill-opacity:1;stroke:none;stroke-width:1.5" />
+      <text
+         stroke-opacity="null"
+         x="199.18893"
+         y="118.4404"
+         id="svg_12"
+         font-size="16"
+         xml:space="preserve"
+         transform="scale(1.0279423,0.97281725)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#503931;stroke-width:0">OnUpdate</text>
+    </g>
+    <g
+       id="g5044">
+      <rect
+         x="198.53383"
+         y="54.13179"
+         width="70"
+         height="20"
+         id="svg_4"
+         rx="1"
+         style="fill:#e3ceab;fill-opacity:1;stroke:none;stroke-width:1.5" />
+      <text
+         stroke-opacity="null"
+         x="200.53734"
+         y="70.418022"
+         id="svg_5"
+         font-size="16"
+         xml:space="preserve"
+         transform="scale(1.0279423,0.97281725)"
+         font-weight="bold"
+         style="font-weight:bold;font-size:12.26054859px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#3f3f3f;fill-opacity:1;stroke:#503931;stroke-width:0">OnMount</text>
+    </g>
+    <path
+       transform="matrix(0.09519656,-0.37362261,0.35935621,0.09891102,83.353276,-56.481538)"
+       inkscape:transform-center-y="-3.9689262"
+       inkscape:transform-center-x="-3.2077691"
+       d="m -228.90446,304.35062 -54.69128,-55.08066 75.04689,-19.82371 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="2.3597417"
+       sodipodi:arg1="1.3125441"
+       sodipodi:r2="22.407246"
+       sodipodi:r1="44.814491"
+       sodipodi:cy="261.02228"
+       sodipodi:cx="-240.34969"
+       sodipodi:sides="3"
+       id="path4878"
+       style="opacity:1;fill:#cc9393;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       transform="matrix(0.54748847,0,0,0.56896671,421.93119,12.923177)"
+       inkscape:transform-center-x="-4.1666622"
+       d="m -179.19292,180.67892 -45.66306,26.36359 v -52.72717 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.0471976"
+       sodipodi:arg1="0"
+       sodipodi:r2="15.22102"
+       sodipodi:r1="30.442041"
+       sodipodi:cy="180.67892"
+       sodipodi:cx="-209.63496"
+       sodipodi:sides="3"
+       id="path4977"
+       style="opacity:1;fill:#cc9393;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       inkscape:transform-center-y="-1.4844618e-06"
+       transform="matrix(0.75279668,0,0,0.78232925,310.30285,-34.864299)"
+       inkscape:transform-center-x="-4.1666662"
+       d="m -186.11157,251.52341 -33.2095,19.17351 v -38.34703 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.0471976"
+       sodipodi:arg1="0"
+       sodipodi:r2="11.069833"
+       sodipodi:r1="22.139666"
+       sodipodi:cy="251.52341"
+       sodipodi:cx="-208.25124"
+       sodipodi:sides="3"
+       id="path4979"
+       style="opacity:1;fill:#cc9393;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       transform="matrix(0.58754861,0,0,0.61059842,590.75875,46.801433)"
+       inkscape:transform-center-x="-4.1666655"
+       d="m -190.95463,112.87621 -42.54967,24.56607 V 88.310149 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.0471976"
+       sodipodi:arg1="0"
+       sodipodi:r2="14.183224"
+       sodipodi:r1="28.366447"
+       sodipodi:cy="112.87621"
+       sodipodi:cx="-219.32108"
+       sodipodi:sides="3"
+       id="path4981"
+       style="opacity:1;fill:#cc9393;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       inkscape:transform-center-y="1.3224389e-06"
+       transform="matrix(0.68827124,0,0,0.71527245,270.22347,-142.89739)"
+       inkscape:transform-center-x="-4.1666663"
+       d="m -145.98343,354.02896 -36.32288,20.97103 v -41.94206 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.0471976"
+       sodipodi:arg1="0"
+       sodipodi:r2="12.10763"
+       sodipodi:r1="24.21526"
+       sodipodi:cy="354.02896"
+       sodipodi:cx="-170.19868"
+       sodipodi:sides="3"
+       id="path4983"
+       style="opacity:1;fill:#cc9393;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       inkscape:transform-center-x="-1.9254443e-06"
+       transform="matrix(0.8526857,0,0,0.73844747,75.2475,69.593532)"
+       inkscape:transform-center-y="2.4999952"
+       d="m 366.30905,98.240785 -11.72765,-20.312887 23.4553,0 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="2.6179939"
+       sodipodi:arg1="1.5707963"
+       sodipodi:r2="6.7709622"
+       sodipodi:r1="13.541924"
+       sodipodi:cy="84.69886"
+       sodipodi:cx="366.30905"
+       sodipodi:sides="3"
+       id="path5228"
+       style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <path
+       inkscape:transform-center-x="1.7501588e-06"
+       transform="matrix(0.91359188,0,0,0.79119377,40.771422,16.629287)"
+       inkscape:transform-center-y="2.5000003"
+       d="m 379.62527,98.015082 -10.9458,-18.958692 21.89161,-10e-7 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="2.6179939"
+       sodipodi:arg1="1.5707963"
+       sodipodi:r2="6.3195648"
+       sodipodi:r1="12.639129"
+       sodipodi:cy="85.375954"
+       sodipodi:cx="379.62527"
+       sodipodi:sides="3"
+       id="path5254"
+       style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-opacity:1"
+       sodipodi:type="star" />
   </g>
- </g>
- <g>
-  <title>Layer 1</title>
-  <rect fill="none" stroke-width="3" x="318.069162" y="87.871234" width="85.48386" height="130" id="svg_10" rx="10" stroke="#aaac3e"/>
-  <g id="svg_42">
-   <rect fill="#dddd66" stroke-width="1.5" x="325.435802" y="95.688607" width="70" height="20" id="svg_7" rx="1" stroke="#aaac3e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="403.026165" y="87.648973" id="svg_8" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">state hook</text>
-  </g>
-  <g id="svg_45">
-   <rect fill="#dddd66" stroke-width="1.5" x="324.145476" y="186.656482" width="70" height="20" id="svg_43" rx="1" stroke="#aaac3e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="401.388064" y="209.679047" id="svg_44" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">state hook</text>
-  </g>
-  <g id="svg_46">
-   <rect fill="#8ab260" stroke-width="1.5" x="324.145479" y="140.841681" width="70" height="20" id="svg_34" rx="1" stroke="#4c7225"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="398.111868" y="149.085631" id="svg_35" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">effect hook</text>
-  </g>
-  <rect fill="#8ab260" stroke-width="2.5" x="52.060085" y="139.689307" width="70" height="30" id="svg_50" rx="5" stroke="#4c7225"/>
-  <text fill="#503931" stroke-width="0" stroke-opacity="null" x="55.149728" y="153.597993" id="svg_51" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useEffect</text>
-  <g id="svg_55">
-   <rect fill="#dddd66" stroke-width="2.5" x="53.350408" y="92.116623" width="70" height="30" id="svg_38" rx="5" stroke="#aaac3e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="61.702124" y="89.780979" id="svg_39" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useState</text>
-  </g>
-  <g id="svg_57">
-   <rect fill="#dddd66" stroke-width="2.5" x="51.902728" y="186.168676" width="70" height="30" id="svg_24" rx="5" stroke="#aaac3e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="58.226157" y="215.948366" id="svg_25" font-size="18" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">useState</text>
-  </g>
-  <path id="svg_6" d="m284.29891,125.82356c-15.35616,0 -27.80487,12.44871 -27.80487,27.80489c0,15.35613 12.44871,27.80489 27.80487,27.80489c15.35617,0 27.80486,-12.44876 27.80486,-27.80489c0,-15.35618 -12.44869,-27.80489 -27.80486,-27.80489zm-4.46701,46.4101l-6.76513,-6.77102l11.83641,-11.83566l-11.83641,-11.83566l6.76513,-6.76516l18.60296,18.60082l-18.60296,18.60668z" stroke-width="1.5" stroke="#503931" fill="#f57461"/>
-  <path id="svg_9" d="m434.05502,124.84795c-15.35617,0 -27.80488,12.44871 -27.80488,27.80489c0,15.35613 12.44871,27.80489 27.80488,27.80489c15.35616,0 27.80486,-12.44876 27.80486,-27.80489c0,-15.35618 -12.4487,-27.80489 -27.80486,-27.80489zm-4.46701,46.4101l-6.76514,-6.77102l11.83641,-11.83566l-11.83641,-11.83566l6.76514,-6.76517l18.60296,18.60083l-18.60296,18.60668z" stroke-width="1.5" stroke="#503931" fill="#f57461"/>
-  <path stroke="#503931" id="svg_13" d="m144.54281,90.2138c-9.02511,0 -16.34145,7.31635 -16.34145,16.34147c0,9.02508 7.31635,16.34146 16.34145,16.34146c9.02512,0 16.34145,-7.31638 16.34145,-16.34146c0,-9.02512 -7.31633,-16.34147 -16.34145,-16.34147zm-2.62534,27.27611l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.9355l0,0.00001z" stroke-width="1.5" fill="#f57461"/>
-  <path stroke="#503931" id="svg_14" d="m142.59159,138.50649c-9.0251,0 -16.34145,7.31634 -16.34145,16.34146c0,9.02509 7.31635,16.34147 16.34145,16.34147c9.02512,0 16.34145,-7.31638 16.34145,-16.34147c0,-9.02512 -7.31633,-16.34146 -16.34145,-16.34146zm-2.62534,27.2761l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.93551z" stroke-width="1.5" fill="#f57461"/>
-  <path stroke="#503931" id="svg_17" d="m142.59159,185.41938c-9.0251,0 -16.34145,7.31634 -16.34145,16.34146c0,9.02509 7.31635,16.34147 16.34145,16.34147c9.02512,0 16.34145,-7.31638 16.34145,-16.34147c0,-9.02512 -7.31633,-16.34146 -16.34145,-16.34146zm-2.62534,27.2761l-3.976,-3.97946l6.95649,-6.95605l-6.95649,-6.95604l3.976,-3.97602l10.93331,10.93206l-10.93331,10.93551z" stroke-width="1.5" fill="#f57461"/>
-  <rect fill="none" stroke-width="3" x="167.67377" y="86.574104" width="85" height="130" id="svg_1" rx="10" stroke="#604a6e"/>
-  <text fill="#aaac3e" stroke="#aaac3e" stroke-width="0" x="322.647478" y="235.599932" id="svg_37" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">memoized</text>
-  <text fill="#aaac3e" stroke="#aaac3e" stroke-width="0" x="342.647731" y="250.591408" id="svg_40" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">state</text>
-  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_3" y="235.120744" x="480.97464" stroke-width="0" stroke="#4c7225" fill="#4c7225">passive</text>
-  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_19" y="250.242617" x="484.877059" stroke-width="0" stroke="#4c7225" fill="#4c7225">effects</text>
-  <text fill="#604a6e" stroke="#aaac3e" stroke-width="0" x="169.142848" y="234.857143" id="svg_49" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">dispatcher</text>
-  <g id="svg_52">
-   <rect fill="none" stroke-width="3" x="466.242022" y="86.980677" width="85" height="130" id="svg_26" rx="10" stroke="#4c7225"/>
-   <rect fill="#8ab260" stroke-width="1.5" x="473.749377" y="186.582745" width="70" height="20" id="svg_28" rx="1" stroke="#4c7225"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="607.788598" y="210.234505" id="svg_27" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#007e87" font-weight="bold">effect</text>
-  </g>
-  <rect fill="#f57261" x="309.714277" y="264.571439" width="253.142857" height="1.714283" id="svg_59" stroke="#f57261"/>
-  <text fill="#f57461" stroke="#f57461" stroke-width="0" x="418.857135" y="286.857143" id="svg_60" font-size="20" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">fiber</text>
-  <g id="svg_61">
-   <rect fill="#9693b2" stroke-width="1.5" x="175.424912" y="185.509073" width="70" height="20" id="svg_15" rx="1" stroke="#604a6e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="227.37545" y="208.139844" id="svg_16" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onIdle</text>
-  </g>
-  <g id="svg_62">
-   <rect fill="#9693b2" stroke-width="1.5" x="175.269949" y="141.155953" width="70" height="20" id="svg_11" rx="1" stroke="#604a6e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="213.451608" y="149.507218" id="svg_12" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onUpdate</text>
-  </g>
-  <g id="svg_63">
-   <rect fill="#9693b2" stroke-width="1.5" x="174.845983" y="96.335641" width="70" height="20" id="svg_4" rx="1" stroke="#604a6e"/>
-   <text fill="#503931" stroke-width="0" stroke-opacity="null" x="216.189572" y="87.443604" id="svg_5" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.7876960039138794,0,0,0.7454545497894287,11.995175778865814,44.40227197110653) " stroke="#503931" font-weight="bold">onMount</text>
-  </g>
-  <g id="svg_53">
-   <path stroke="#aaac3e" transform="rotate(180 359.415283203125,174.3115692138672) " id="svg_47" d="m353.317739,174.291327l6.09756,-8.41368l6.09756,8.41368l-3.04878,0l0,8.45417l-6.09756,0l0,-8.45417l-3.04878,0z" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
-   <text stroke="#aaac3e" transform="rotate(-90 358.95458984375,172.9230804443359) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="6" id="svg_48" y="174.993842" x="353.287856" stroke-width="0" fill="#aaac3e">next</text>
-  </g>
-  <g id="svg_58">
-   <path stroke="#aaac3e" transform="rotate(180 359.1328125,127.7013931274414) " id="svg_54" d="m353.035249,127.68116l6.09756,-8.41368l6.09756,8.41368l-3.04878,0l0,8.45417l-6.09756,0l0,-8.45417l-3.04878,0z" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
-   <text stroke="#aaac3e" transform="rotate(-90 358.67211914062506,126.31290435791016) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="6" id="svg_56" y="128.383675" x="353.005366" stroke-width="0" fill="#aaac3e">next</text>
-  </g>
- </g>
 </svg>

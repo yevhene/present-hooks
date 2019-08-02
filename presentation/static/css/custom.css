@@ -12,10 +12,9 @@ dl {
 }
 
 img {
-  background-color: white !important;
+  background-color: #3a3a3a !important;
   max-height: 80vh !important;
   box-shadow: none !important;
-  border: 20px white solid !important;
 }
 
 img.blue {

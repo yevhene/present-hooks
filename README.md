@@ -1,4 +1,4 @@
-# Demo
+# Hooks
 
 ## Setup
 ```
