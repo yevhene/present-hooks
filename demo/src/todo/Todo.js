@@ -17,7 +17,7 @@ function Todo() {
     e.preventDefault()
     e.stopPropagation()
 
-    const title = new FormData(e.target).get('title')
+    const title = e.target.querySelector('[name="title"]').value
     dispatch(addTodo(title))
   }
 

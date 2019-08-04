@@ -6,6 +6,7 @@ import Todo from './todo/Todo'
 import Scroll from './scroll/Scroll'
 import Rules from './rules/Rules'
 import Spy from './spy/Spy'
+import Spring from './spring/Spring'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <li><Link to='/scroll/'>Scroll</Link></li>
             <li><Link to='/rules/'>Rules</Link></li>
             <li><Link to='/spy/'>Spy</Link></li>
+            <li><Link to='/spring/'>Spring</Link></li>
           </ul>
         </nav>
 
@@ -28,6 +30,7 @@ function App() {
           <Route path='/scroll/' component={Scroll} />
           <Route path='/rules/' component={Rules} />
           <Route path='/spy/' component={Spy} />
+          <Route path='/spring/' component={Spring} />
         </section>
       </div>
     </Router>
