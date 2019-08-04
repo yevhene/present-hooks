@@ -117,3 +117,5 @@ For a brand new **Flare** event system
 #### Demo: Spy
 
 ## [useHooks](https://usehooks.com/)
+
+#### Demo: Speakers

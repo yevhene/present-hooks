@@ -7,6 +7,7 @@ import Scroll from './scroll/Scroll'
 import Rules from './rules/Rules'
 import Spy from './spy/Spy'
 import Spring from './spring/Spring'
+import Speakers from './speakers/Speakers'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <li><Link to='/rules/'>Rules</Link></li>
             <li><Link to='/spy/'>Spy</Link></li>
             <li><Link to='/spring/'>Spring</Link></li>
+            <li><Link to='/speakers/'>Speakers</Link></li>
           </ul>
         </nav>
 
@@ -31,6 +33,7 @@ function App() {
           <Route path='/rules/' component={Rules} />
           <Route path='/spy/' component={Spy} />
           <Route path='/spring/' component={Spring} />
+          <Route path='/speakers/' component={Speakers} />
         </section>
       </div>
     </Router>
